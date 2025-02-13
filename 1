@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: pink;
+            overflow: hidden;
+            font-family: 'Times New Roman', serif;
+        }
+        .card {
+            width: 450px;
+            height: 550px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ff4d6d;
+            margin-bottom: 10px;
+        }
+        .letter {
+            font-size: 20px;
+            color: #333;
+            text-align: left;
+            width: 90%;
+            height: 70%;
+            overflow-y: auto;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(255, 230, 230, 0.5);
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-top: 15px;
+        }
+        button {
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+            font-family: Arial, sans-serif;
+        }
+        button:hover {
+            background-color: #e03a5c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="title">A Letter for You, Jo ❤️</div>
+        
+        <div class="letter">
+            Dear Jo,  
+            <br><br>
+            Every moment with you feels like a dream. You are my source of happiness, my safe place, and my heart's greatest treasure. 
+            <br><br>
+            Your kindness, laughter, and love make every day special. I cherish every memory we create together, and I can't wait to make more. 
+            <br><br>
+            Thank you for being you. Thank you for being mine.  
+            <br><br>
+            Always and forever,  
+            <br>
+            <b>Ann</b> ❤️
+        </div>
+
+        <div class="button-container">
+            <button onclick="location.href='index.html'">Back</button>
+            <button onclick="nextPage()">Next</button>
+        </div>
+    </div>
+
+    <script>
+        function nextPage() {
+            alert("Next page coming soon! 😊"); // Replace with actual link when needed
+        }
+    </script>
+
+</body>
+</html>
