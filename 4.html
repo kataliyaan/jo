@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: pink;
+            font-family: 'Times New Roman', serif;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 900px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .image-container {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffe6e6;
+            padding: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .text-container {
+            width: 60%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .title {
+            font-size: 26px;
+            font-weight: bold;
+            color: #ff4d6d;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .letter {
+            font-size: 18px;
+            color: #333;
+            text-align: left;
+            line-height: 1.6;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: 0.3s;
+            font-family: 'Times New Roman', serif;
+        }
+        button:hover {
+            background-color: #e03a5c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left: Image -->
+        <div class="image-container">
+            <img src="https://i.pinimg.com/736x/e3/98/ed/e398edaf4a052b37a155945d5a600167.jpg" alt="Special Moment">
+        </div>
+
+        <!-- Right: Letter -->
+        <div class="text-container">
+            <div class="title">A Heartfelt Note for You ❤️</div>
+            <div class="letter">
+                My love,  
+                <br><br>
+                Sometimes words are not enough to express how much you mean to me. But in every smile, every hug, and every moment we share, I hope you feel the depth of my love.  
+                <br><br>
+                You are my home, my happiness, and my greatest blessing. I cherish you more than words can say.  
+                <br><br>
+                Forever yours,  
+                <br>
+                <b>Ann</b> ❤️
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="2.html"><button>Back</button></a>
+    </div>
+
+</body>
+</html>
