@@ -12,7 +12,7 @@
             height: 100vh;
             background-color: pink;
             overflow: hidden;
-            font-family: 'Verdana', serif;
+            font-family: 'Times New Roman', serif;
         }
         .card {
             width: 450px;
@@ -44,12 +44,16 @@
             padding: 10px;
             border-radius: 10px;
             background: rgba(255, 230, 230, 0.5);
+            font-family: 'Times New Roman', serif;
         }
         .button-container {
             display: flex;
             justify-content: space-between;
             width: 80%;
             margin-top: 15px;
+        }
+        .button-container a {
+            text-decoration: none;
         }
         button {
             background-color: #ff4d6d;
@@ -60,7 +64,7 @@
             cursor: pointer;
             font-size: 16px;
             transition: 0.3s;
-            font-family: Arial, sans-serif;
+            font-family: 'Times New Roman', serif;
         }
         button:hover {
             background-color: #e03a5c;
@@ -87,16 +91,14 @@
         </div>
 
         <div class="button-container">
-            <button onclick="location.href='index.html'">Back</button>
-            <button onclick="nextPage()">Next</button>
+            <a href="index.html">
+                <button>Back</button>
+            </a>
+            <a href="2.html">
+                <button>Next</button>
+            </a>
         </div>
     </div>
-
-    <script>
-        function nextPage() {
-            alert("Next page coming soon! 😊"); // Replace with actual link when needed
-        }
-    </script>
 
 </body>
 </html>
