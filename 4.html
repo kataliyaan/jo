@@ -21,6 +21,8 @@
             border-radius: 20px;
             box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
             overflow: hidden;
+            padding: 20px;
+            position: relative;
         }
         .image-container {
             width: 40%;
@@ -29,24 +31,43 @@
             justify-content: center;
             background: #ffe6e6;
             padding: 20px;
+            position: relative;
         }
         .image-container img {
             width: 100%;
             border-radius: 10px;
+            transition: 0.3s ease-in-out;
         }
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #ff4d6d;
+            font-size: 24px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        .nav-button:hover {
+            color: #e03a5c;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
         .text-container {
             width: 60%;
             padding: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            text-align: center;
         }
         .title {
             font-size: 26px;
             font-weight: bold;
             color: #ff4d6d;
             margin-bottom: 15px;
-            text-align: center;
         }
         .letter {
             font-size: 18px;
@@ -55,7 +76,6 @@
             line-height: 1.6;
         }
         .button-container {
-            text-align: center;
             margin-top: 20px;
         }
         button {
@@ -78,30 +98,49 @@
 
     <div class="container">
         
+        <!-- Left: Image with Navigation Buttons -->
         <div class="image-container">
-            <img src="jen.jpg">
+            <button class="nav-button prev" onclick="prevImage()">&lt;</button>
+            <img id="mainImage" src="jen.jpg">
+            <button class="nav-button next" onclick="nextImage()">&gt;</button>
         </div>
 
-        
+        <!-- Right: Letter & Back Button -->
         <div class="text-container">
             <div class="title">si lord,,❤️</div>
             <div class="letter">
-                My love,  
                 <br><br>
-                Sometimes words are not enough to express how much you mean to me. But in every smile, every hug, and every moment we share, I hope you feel the depth of my love.  
+                remember this? yung tweet ko na nakita mo tapos nagselos ka? HAHAHAHAHAHHAHAHA this is actually the convo after nun. i'm not really a religious person, pero after this, i kept asking god—ito na ba? ito na ba yung sinasabi ni jen na ibibigay niya para sa akin?  
                 <br><br>
-                You are my home, my happiness, and my greatest blessing. I cherish you more than words can say.  
+                kasi mismong sa birthday niya, doon mo pa lang ako napansin na may feelings ako sa'yo, at doon mo rin lang na-realize na may feelings ka rin pala sa akin.  
                 <br><br>
-                Forever yours,  
+                kaya sobrang grateful ko sa kanya, dahil ikaw ang binigay niya sa akin.  
                 <br>
-                <b>Ann</b> ❤️
+                <b>amen? amen!</b> ❤️
+            </div>
+
+            <!-- Back Button Inside -->
+            <div class="button-container">
+                <a href="2.html"><button>Back</button></a>
             </div>
         </div>
+
     </div>
 
-    <div class="button-container">
-        <a href="2.html"><button>Back</button></a>
-    </div>
+    <script>
+        let images = ["jen.jpg", "joo.jfif"];
+        let currentIndex = 0;
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.getElementById("mainImage").src = images[currentIndex];
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            document.getElementById("mainImage").src = images[currentIndex];
+        }
+    </script>
 
 </body>
 </html>
