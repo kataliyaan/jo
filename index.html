@@ -16,25 +16,31 @@
         }
         .card {
             width: 450px; /* Enlarged width */
-            height: 500px; /* Adjusted height */
+            height: 550px; /* Adjusted height */
             background: white;
             border-radius: 20px;
             box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             text-align: center;
             position: relative;
             padding: 20px;
+            overflow: hidden;
+        }
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ff4d6d;
+            margin-bottom: 15px;
         }
         .image-container {
-            width: 100%;
-            height: 60%;
+            width: 80%;
+            height: 70%;
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
             border-radius: 10px;
         }
         .image-container img {
@@ -43,9 +49,8 @@
             object-fit: cover;
             border-radius: 10px;
         }
-        .buttons {
-            display: flex;
-            gap: 10px;
+        .button-container {
+            margin-top: 15px;
         }
         button {
             background-color: #ff4d6d;
@@ -82,15 +87,17 @@
 <body>
 
     <div class="card">
-        <!-- Image inside the card -->
+        <!-- Title -->
+        <div class="title">Happy Valentine's Day, Jo!</div>
+
+        <!-- Centered Image -->
         <div class="image-container">
-            <img id="cardImage" src="https://i.pinimg.com/736x/95/1f/4f/951f4f311e6ea9939e1becd8367a5e89.jpg">
+            <img id="cardImage" src="https://i.pinimg.com/736x/95/1f/4f/951f4f311e6ea9939e1becd8367a5e89.jpg" alt="Valentine Image">
         </div>
 
-        <!-- Navigation Buttons -->
-        <div class="buttons">
-            <button onclick="prevImage()">Back</button>
-            <button onclick="nextImage()">Next</button>
+        <!-- Next Button -->
+        <div class="button-container">
+            <button onclick="nextPage()">Next</button>
         </div>
 
         <!-- Floating hearts -->
@@ -109,25 +116,7 @@
         </div>
     </div>
 
-    <script>
-        // Image Navigation
-        let images = [
-            "https://via.placeholder.com/450x300.png?text=First+Image",
-            "https://via.placeholder.com/450x300.png?text=Second+Image",
-            "https://via.placeholder.com/450x300.png?text=Third+Image"
-        ];
-        let index = 0;
 
-        function nextImage() {
-            index = (index + 1) % images.length;
-            document.getElementById("cardImage").src = images[index];
-        }
-
-        function prevImage() {
-            index = (index - 1 + images.length) % images.length;
-            document.getElementById("cardImage").src = images[index];
-        }
-    </script>
 
 </body>
 </html>
