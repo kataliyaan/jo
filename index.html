@@ -52,6 +52,9 @@
         .button-container {
             margin-top: 15px;
         }
+        .button-container a {
+            text-decoration: none;
+        }
         button {
             background-color: #ff4d6d;
             color: white;
@@ -95,9 +98,11 @@
             <img id="cardImage" src="https://i.pinimg.com/736x/95/1f/4f/951f4f311e6ea9939e1becd8367a5e89.jpg" alt="Valentine Image">
         </div>
 
-        <!-- Next Button -->
+        <!-- Next Button using <a> -->
         <div class="button-container">
-            <button onclick="location.href='1.html'">Next</button>
+            <a href="1.html">
+                <button>Next</button>
+            </a>
         </div>
 
         <!-- Floating hearts -->
@@ -115,8 +120,6 @@
             </script>
         </div>
     </div>
-
-
 
 </body>
 </html>
