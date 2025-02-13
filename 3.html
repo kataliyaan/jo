@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Path</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: pink;
+            font-family: 'Times New Roman', serif;
+            text-align: center;
+        }
+        .title {
+            font-size: 26px;
+            font-weight: bold;
+            color: #ff4d6d;
+            margin-bottom: 20px;
+        }
+        .icon-container {
+            display: flex;
+            gap: 30px;
+        }
+        .icon {
+            width: 180px;
+            height: 180px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .icon:hover {
+            transform: scale(1.1);
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 20px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+            font-family: 'Times New Roman', serif;
+        }
+        button:hover {
+            background-color: #e03a5c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title">RANDOM RAHHHH</div>
+
+    <div class="icon-container">
+        <!-- First Icon -->
+        <a href="3.html">
+            <img class="icon" src="https://i.pinimg.com/736x/af/7f/f8/af7ff81ed5710ac021e69696b4ec030b.jpg" alt="Option 1">
+        </a>
+
+        <!-- Second Icon -->
+        <a href="4.html">
+            <img class="icon" src="https://i.pinimg.com/736x/e3/98/ed/e398edaf4a052b37a155945d5a600167.jpg" alt="Option 2">
+        </a>
+    </div>
+
+    <!-- Back Button -->
+    <div class="button-container">
+        <a href="1.html">
+            <button>Back</button>
+        </a>
+    </div>
+
+</body>
+</html>
