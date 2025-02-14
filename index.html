@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Card</title>
+    <title>hello</title>
     <style>
         body {
             display: flex;
@@ -11,115 +11,83 @@
             align-items: center;
             height: 100vh;
             background-color: pink;
-            overflow: hidden;
-            font-family: Arial, sans-serif;
-        }
-        .card {
-            width: 450px; /* Enlarged width */
-            height: 550px; /* Adjusted height */
-            background: white;
-            border-radius: 20px;
-            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
-            display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            position: relative;
-            padding: 20px;
-            overflow: hidden;
+            margin: 0; 
+            font-family: Arial, sans-serif; 
         }
-        .title {
-            font-size: 22px;
-            font-weight: bold;
-            color: #ff4d6d;
-            margin-bottom: 15px;
+        h1 {
+            font-size: 36px; 
+            color: #ff69b4; 
+            text-align: left; 
+            margin-bottom: 20px; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
         }
-        .image-container {
-            width: 80%;
-            height: 70%;
+        .container {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
+            flex-direction: row; 
+            gap: 30px; 
+            align-items: flex-start; 
         }
-        .image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-        .button-container {
-            margin-top: 15px;
-        }
-        .button-container a {
-            text-decoration: none;
-        }
-        button {
-            background-color: #ff4d6d;
-            color: white;
-            border: none;
-            padding: 10px 20px;
+        .polaroid {
+            width: 250px;
+            padding: 10px 10px 50px 10px;
+            background: white;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
             border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: 0.3s;
+
         }
-        button:hover {
-            background-color: #e03a5c;
-        }
-        .hearts {
-            position: absolute;
+        .polaroid img {
             width: 100%;
-            height: 100%;
-            overflow: hidden;
-            pointer-events: none;
+            border-bottom: 10px solid white;
         }
-        .heart {
-            position: absolute;
-            color: red;
-            font-size: 20px;
-            animation: float 3s infinite;
+        .spotify {
+            width: 280px; 
+            height: 352px; 
         }
-        @keyframes float {
-            0% { transform: translateY(0); opacity: 1; }
-            100% { transform: translateY(-100px); opacity: 0; }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+            width: 100%; 
+            max-width: 600px; 
+        }
+        .nav-button {
+            background-color: #ff69b4; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            padding: 10px 20px; 
+            margin: 5px; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease; 
+        }
+        .nav-button:hover {
+            background-color: #ff1493; 
         }
     </style>
 </head>
 <body>
-
-    <div class="card">
-        <!-- Title -->
-        <div class="title">Happy Valentine's Day, Jo!</div>
-
-        <!-- Centered Image -->
-        <div class="image-container">
-            <img id="cardImage" src="https://i.pinimg.com/736x/95/1f/4f/951f4f311e6ea9939e1becd8367a5e89.jpg" alt="Valentine Image">
+    <h1>my girlfriend ⋆.˚✮🎧✮˚.⋆</h1>
+    <div class="container">
+        <div class="spotify">
+            <iframe src="https://open.spotify.com/embed/playlist/7t3s4o2jDRAO0Vz32n9RAC?utm_source=oembed" style="width: 100%; height: 100%; border: 0;" allowfullscreen allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture;"></iframe>
         </div>
-
-        <!-- Next Button using <a> -->
-        <div class="button-container">
-            <a href="1.html">
-                <button>Next</button>
-            </a>
+        <div class="polaroid">
+            <img src="jer.jpg">
         </div>
-
-        <!-- Floating hearts -->
-        <div class="hearts">
-            <script>
-                for (let i = 0; i < 20; i++) {
-                    let heart = document.createElement("div");
-                    heart.className = "heart";
-                    heart.innerHTML = "❤️";
-                    heart.style.left = Math.random() * 100 + "vw";
-                    heart.style.top = Math.random() * 100 + "vh";
-                    heart.style.animationDuration = Math.random() * 2 + 2 + "s";
-                    document.querySelector(".hearts").appendChild(heart);
-                }
-            </script>
+        <div class="polaroid">
+            <img src="ann.jpeg">
         </div>
     </div>
+    <footer>
+        <button class="nav-button">(๑ᵔ⤙ᵔ๑)</button>
+        <button class="nav-button">( ˶ˆᗜˆ˵ )</button>
+        <button class="nav-button">(∩˃o˂∩)♡</button>
 
+    </footer>
 </body>
 </html>
