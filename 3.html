@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Messages</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: pink;
+            font-family: Verdana;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 20px;
+            margin-top: 60px;
+        }
+        .container {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 900px;
+        }
+        .icon-container {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+        .icon {
+            width: 180px;
+            height: auto;
+            cursor: pointer;
+        }
+        .tooltip {
+            display: none;
+            position: absolute;
+            top: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            background: white;
+            padding: 12px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-size: 16px;
+            color: black;
+            z-index: 10;
+        }
+        .icon-container:hover .tooltip {
+            display: block;
+        }
+        /* Tooltip for the 5th icon appears beside */
+        .icon-container:nth-child(5) .tooltip {
+            top: 50%;
+            left: 110%;
+            transform: translateY(-50%);
+            width: 280px;
+        }
+        /* Fix for the last two icons - tooltip goes above */
+        .icon-container:nth-last-child(-n+2) .tooltip {
+            top: auto;
+            bottom: 110%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title">Things I Admire/Love About Jo</div>
+
+    <div class="container">
+        <div class="icon-container">
+            <img src="https://i.pinimg.com/736x/97/1e/73/971e734b9e61b7d9fc0b9a72410c4f53.jpg" class="icon">
+            <div class="tooltip">
+                One of the things I love about her is that when I ask about her day or when she talks about it, 
+                she doesn’t just say, "Okay lang." She always gives detailed answers. Everything that happened that day and how she felt—everything. And I really love that.
+            </div>
+        </div>
+
+        <div class="icon-container">
+            <img src="https://i.pinimg.com/736x/8b/1c/f6/8b1cf6ea6edca8aa982112a8002a5e0b.jpg" class="icon">
+            <div class="tooltip">
+                I admire her passion for what she does and her genuine desire to help people. A lot of people say, "I want to help others," when asked why they chose to become a doctor or a nurse. But with her, you can truly feel the sincerity. It’s not just words, she actually takes action and does something about it.
+            </div>
+        </div>
+
+        <div class="icon-container">
+            <img src="https://i.pinimg.com/736x/6b/1b/b2/6b1bb26664a8aafcd16a6d4436bcf54a.jpg" class="icon">
+            <div class="tooltip">
+                She has this ability to stay positive. No matter how bad a situation is, she always finds a way to turn it into something better, using it as motivation. And that’s something truly admirable about her.
+            </div>
+        </div>
+
+        <div class="icon-container">
+            <img src="https://i.pinimg.com/736x/30/31/59/303159c163ce5fe2653923029d512841.jpg" class="icon">
+            <div class="tooltip">
+                She is really the best yapper. She never gives vague or generic answers. She shares her thoughts, emotions, and experiences in such a way that makes every conversation meaningful.
+            </div>
+        </div>
+
+        <div class="icon-container">
+            <img src="https://i.pinimg.com/736x/c3/1e/a8/c31ea864ac076ade470d795c447f948c.jpg" class="icon">
+            <div class="tooltip">
+                She makes me feel heard, understood, and appreciated. It’s like she has this way of making me feel like I'm the most important person in the world.
+            </div>
+        </div>
+
+        <div class="icon-container">
+            <img src="https://i.pinimg.com/736x/df/c8/05/dfc8054c2af12896ee85e6eca09c689a.jpg" class="icon">
+            <div class="tooltip">
+                The way she loves is special. She loves wholeheartedly, without holding back. And that’s something truly rare and beautiful. I'm so lucky to be the one she loves.
+            </div>
+        </div>
+
+        <div class="icon-container">
+            <img src="https://i.pinimg.com/736x/96/99/b9/9699b94b7be294bbf49fdfe40e57dbe5.jpg" class="icon">
+            <div class="tooltip">
+                The way she surprises me in the best ways. Whether it’s with her words, or little things she does, she always finds a way to make me feel extra special.
+            </div>
+        </div>
+
+        <div class="icon-container">
+            <img src="https://i.pinimg.com/736x/45/fc/30/45fc309701622eec526ccdb550052b38.jpg" class="icon">
+            <div class="tooltip">
+                Her soft heart. She may be strong, pero deep inside, she’s so caring and tender. She feels deeply for others, and that makes her even more special.
+            </div>
+        </div>
+
+        <div class="icon-container">
+            <img src="https://i.pinimg.com/736x/29/2d/f5/292df554ad24668bebe7049b435e18d3.jpg" class="icon">
+            <div class="tooltip">
+                How amazing Ate she is—when she talk about Jewel or when I see how she treat her sister, it makes me wish I had a sister like you.
+            </div>
+        </div>
+
+        <div class="icon-container">
+            <img src="https://i.pinimg.com/474x/d1/39/57/d139572cf4a45e8b616c0e311958e251.jpg" class="icon">
+            <div class="tooltip">
+                I love the way she looks at me, like I’m the most important person in the world. It makes my heart race every time.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
 
